@@ -1,0 +1,90 @@
+body{
+    overflow-x: hidden;
+}
+
+#banner{
+    margin: 0;
+    max-width: none;
+    width: 100vw;
+}
+
+#banner .ed-item{
+    width: 100%;
+    padding: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 25px; 
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px); 
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 231, 231);
+    text-align: center;
+    border-radius: 1em;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#cards{
+    margin: auto;
+}
+
+.card img{
+    height: 250px;
+    width: auto;
+}
+
+.card h4{
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px .1px black;
+}
+
+#banner img{
+    width: 100vw;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+aside img{
+    height: 100%;
+    width: auto;
+}
+
+
+.web-vertical {
+    float: left;
+    text-align: center;
+    background: #FAFAFA;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
